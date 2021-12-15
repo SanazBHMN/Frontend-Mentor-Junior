@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <script defer src="script.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container--tipper">
+        <div class="container--bill">
+          <p>Bill</p>
+          <div class="container--bill__input">
+            <input class="input input--bill"  placeholder="0" />
+          </div>
+          <div class="container--tips">
+            <p>Select Tip %</p>
+            <div class="container--tips__amounts">
+              <div class="tip">5%</div>
+              <div class="tip">10%</div>
+              <div class="tip">15%</div>
+              <div class="tip">25%</div>
+              <div class="tip">50%</div>
+              <input class="tip-custom" placeholder="custom"></input>
+            </div>
+          </div>
+          <div class="container--people">
+            <div class="container--people__input">
+              <p>Number of People</p>
+              <input class="input input--people" placeholder="0"/>
+            </div>
+          </div>
+        </div>
+        <div class="container--amount">
+          <div class="container--amount__tiptot">
+            <div class="tip--text">
+              <p>Tip Amount</p>
+              <span> / person </span>
+            </div>
+            <div class="amount amount--tip">$0.00</div>
+          </div>
+          <div class="container--amount__tiptot tot">
+            <div class="tip--text">
+              <p>Total</p>
+              <span> / person </span>
+            </div>
+
+            <div class="amount amount--total">$0.00</div>
+          </div>
+
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://robertofranco.netlify.app/">Roberto Franco</a>.
+      </p>
+    </footer>
+  </body>
+</html>

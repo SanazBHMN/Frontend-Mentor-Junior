@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  background-image: url(./images/logo.svg);
+  background-position-x: 50%;
+  background-position-y: 5%;
+
+  background-repeat: no-repeat;
+
+  font-family: "Space Mono";
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container--tipper {
+  background-color: #fff;
+  margin-top: 5%;
+  width: 60%;
+
+  display: flex;
+  justify-content: space-between;
+
+  gap: 7%;
+
+  padding: 3%;
+
+  border-radius: 12px;
+}
+
+.container--bill {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+.input {
+  margin: 1% 0 10% 0;
+  width: 100%;
+  outline-color: hsl(172, 67%, 45%);
+  position: relative;
+  background-color: hsl(180, 23%, 91%);
+
+  color: hsl(183, 100%, 15%);
+  height: 48px;
+  border: none;
+  z-index: 1;
+  text-align: end;
+  font-weight: 700;
+  font-size: 24px;
+  padding-right: 4%;
+}
+
+.container--bill__input::before {
+  position: absolute;
+  margin-top: 1.3%;
+  margin-left: 1%;
+  font-weight: 700;
+  content: url(./images/icon-dollar.svg);
+
+  color: hsl(184, 14%, 56%);
+
+  z-index: 2;
+}
+
+.container--people__input::before {
+  position: absolute;
+  margin-top: 2.5%;
+  margin-left: 1%;
+  font-weight: 700;
+  content: url(./images/icon-person.svg);
+  font-size: 18px;
+
+  color: hsl(184, 14%, 56%);
+
+  z-index: 2;
+}
+
+.container--tips__amounts {
+  margin: 5% 0 10% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.tip-custom {
+  padding: 7% 0;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(184, 14%, 56%);
+
+  outline-color: hsl(172, 67%, 45%);
+
+  border-radius: 3px;
+
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+
+  padding: 0;
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+}
+
+input.tip:hover {
+  cursor: text;
+}
+
+.tip {
+  background-color: hsl(183, 100%, 15%);
+  padding: 7%;
+
+  border-radius: 3px;
+
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(185, 41%, 84%);
+}
+
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.container--amount {
+  background-color: hsl(183, 100%, 15%);
+  flex: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: #fff;
+
+  padding: 5%;
+
+  border-radius: 12px;
+}
+
+.tip--text span {
+  color: hsl(172, 67%, 45%);
+  font-size: 14px;
+}
+
+.container--amount__tiptot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tot {
+  padding-bottom: 25%;
+}
+
+.amount {
+  font-size: 38px;
+  font-weight: 700;
+
+  color: hsl(172, 67%, 45%);
+}
+
+.tip--text {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip--text p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.container--amount__total {
+  display: flex;
+}
+
+button {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+
+  padding: 4%;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.attribution {
+  margin-top: -2%;
+}

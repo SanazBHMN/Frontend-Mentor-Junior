@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
+
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-profile">
+        <div class="profile">
+          <img class="profile-img" src="images/image-jeremy.png" />
+          <div>
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="time-setting">
+          <div class="time">Daily</div>
+          <div class="time active">Weekly</div>
+          <div class="time">Monthly</div>
+        </div>
+      </div>
+
+      <div class="container-stat">
+        <div class="container-icon"></div>
+        <div class="stat">
+          <div class="stat-title">{%STATNAME%}</div>
+          <span class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+          <div class="time-elapsed">{%STATTIME%}hrs</div>
+          <div class="container-previous">
+            <p class="time-previous-name">Last week</p>
+            -
+            <p class="time-previous-hrs">{%PREVIOUSSTATTIME%}hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-stat">
+        <div class="container-icon"></div>
+        <div class="stat">
+          <div class="stat-title">{%STATNAME%}</div>
+          <span class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+          <div class="time-elapsed">{%STATTIME%}hrs</div>
+          <div class="container-previous">
+            <p class="time-previous-name">Last week</p>
+            -
+            <p class="time-previous-hrs">{%PREVIOUSSTATTIME%}hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-stat">
+        <div class="container-icon"></div>
+        <div class="stat">
+          <div class="stat-title">{%STATNAME%}</div>
+          <span class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+          <div class="time-elapsed">{%STATTIME%}hrs</div>
+          <div class="container-previous">
+            <p class="time-previous-name">Last week</p>
+            -
+            <p class="time-previous-hrs">{%PREVIOUSSTATTIME%}hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-stat">
+        <div class="container-icon"></div>
+        <div class="stat">
+          <div class="stat-title">{%STATNAME%}</div>
+          <span class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+          <div class="time-elapsed">{%STATTIME%}hrs</div>
+          <div class="container-previous">
+            <p class="time-previous-name">Last week</p>
+            -
+            <p class="time-previous-hrs">{%PREVIOUSSTATTIME%}hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-stat">
+        <div class="container-icon"></div>
+        <div class="stat">
+          <div class="stat-title">{%STATNAME%}</div>
+          <span class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+          <div class="time-elapsed">{%STATTIME%}hrs</div>
+          <div class="container-previous">
+            <p class="time-previous-name">Last week</p>
+            -
+            <p class="time-previous-hrs">{%PREVIOUSSTATTIME%}hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-stat">
+        <div class="container-icon"></div>
+        <div class="stat">
+          <div class="stat-title">{%STATNAME%}</div>
+          <span class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </span>
+          <div class="time-elapsed">{%STATTIME%}hrs</div>
+          <div class="container-previous">
+            <p class="time-previous-name">Last week</p>
+            -
+            <p class="time-previous-hrs">{%PREVIOUSSTATTIME%}hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://robertofranco.netlify.app/">Roberto Franco</a>.
+      </p>
+    </footer>
+  </body>
+</html>
