@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav nav--desktop">
+        <img class="logo" src="images/logo.svg" />
+        <ul class="nav--links">
+          <li class="nav--link">About</li>
+          <li class="nav--link">Services</li>
+          <li class="nav--link">Projects</li>
+          <li class="nav--link">Contact</li>
+        </ul>
+        <div class="nav nav--mobile">
+          <img class="mobile--menu" src="images/icon-hamburger.svg" />
+        </div>
+      </nav>
+      <div class="mobile--nav hidden">
+        <ul class="mobile--nav-links">
+          <li class="mobile--nav-link">About</li>
+          <li class="mobile--nav-link">Services</li>
+          <li class="mobile--nav-link">Projects</li>
+          <li class="mobile--nav-link">Contact</li>
+        </ul>
+      </div>
+      <div class="header-box">
+        <h1 class="main-heading">We are creatives</h1>
+        <img class="arrow" src="images/icon-arrow-down.svg" />
+      </div>
+    </header>
+
+    <section class="section--showcase">
+      <div class="container grid--2-cols">
+        <div class="text--box">
+          <h1 class="text--box-heading">Transform your brand</h1>
+          <p class="text--box-text">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <p class="learn-more lm-y">Learn more</p>
+        </div>
+        <div class="img-box-transform">
+          <img class="img-box" src="images/mobile/image-transform.jpg" />
+        </div>
+
+        <div>
+          <img class="img-box" src="images/mobile/image-stand-out.jpg" />
+        </div>
+        <div class="text--box">
+          <h1 class="text--box-heading">Stand out to the right audience</h1>
+          <p class="text--box-text">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <p class="learn-more lm-r">Learn more</p>
+        </div>
+
+        <div class="text-img-box left-box">
+          <h2>Graphic design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+
+        <div class="text-img-box right-box">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--testimonials grid--3-cols">
+      <h3 class="testimonial--heading">Client testimonials</h3>
+      <div class="testimonial">
+        <img class="testimonial--img" src="images/image-emily.jpg" />
+        <p class="testimonial--text">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <p class="testimonial--name">Emily R.</p>
+        <p class="testimonial--role">Marketing Director</p>
+      </div>
+
+      <div class="testimonial">
+        <img class="testimonial--img" src="images/image-thomas.jpg" />
+        <p class="testimonial--text">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <p class="testimonial--name">Thomas S.</p>
+        <p class="testimonial--role">Chief Operating Officer</p>
+      </div>
+
+      <div class="testimonial">
+        <img class="testimonial--img" src="images/image-jennie.jpg" />
+        <p class="testimonial--text">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <p class="testimonial--name">Jennie F.</p>
+        <p class="testimonial--role">Business Owner</p>
+      </div>
+    </section>
+
+    <section class="section--gallery">
+      <div class="container">
+        <div class="gallery">
+          <div>
+            <img
+              class="img-box"
+              src="images/desktop/image-gallery-milkbottles.jpg"
+            />
+          </div>
+          <div>
+            <img
+              class="img-box"
+              src="images/desktop/image-gallery-orange.jpg"
+            />
+          </div>
+          <div>
+            <img class="img-box" src="images/desktop/image-gallery-cone.jpg" />
+          </div>
+          <div>
+            <img
+              class="img-box"
+              src="images/desktop/image-gallery-sugarcubes.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <foooter class="footer">
+      <img class="logo" src="images/logo.svg" />
+      <div class="footer-links">
+        <p class="footer-link">About</p>
+        <p class="footer-link">Services</p>
+        <p class="footer-link">Projects</p>
+      </div>
+      <div class="social-links">
+        <img class="social-link" src="images/icon-facebook.svg" />
+        <img class="social-link" src="images/icon-instagram.svg" />
+        <img class="social-link" src="images/icon-twitter.svg" />
+        <img class="social-link" src="images/icon-pinterest.svg" />
+      </div>
+
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://robertofranco.netlify.app/">Roberto Franco</a>.
+      </p>
+    </foooter>
+  </body>
+</html>

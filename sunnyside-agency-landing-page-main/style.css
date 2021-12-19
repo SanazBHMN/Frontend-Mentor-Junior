@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "barlow";
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  padding: 2rem;
+  height: 85vh;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav--mobile {
+  display: none;
+}
+
+.mobile--nav-links {
+  display: none;
+}
+
+.nav--links {
+  margin-right: 4rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav--link:last-child {
+  background-color: #fff;
+  color: #000;
+  padding: 5% 7%;
+  font-size: 0.9rem;
+
+  border-radius: 30px;
+
+  text-transform: uppercase;
+  font-family: "fraunces";
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+}
+
+.nav--link:hover {
+  cursor: pointer;
+}
+
+.nav--link:last-child:hover {
+  opacity: 0.7;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.main-heading {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 5px;
+  padding-top: 5rem;
+
+  text-transform: uppercase;
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.text--box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 20%;
+}
+
+.text--box-heading {
+  font-family: "Fraunces";
+  color: hsl(212, 27%, 19%);
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.text--box-text {
+  padding: 2rem 0;
+  line-height: 1.6;
+  color: hsl(232, 10%, 55%);
+}
+
+.learn-more {
+  font-family: "Fraunces";
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+
+.learn-more:hover {
+  cursor: pointer;
+}
+
+.learn-more:hover::after {
+  content: "";
+  display: inline-block;
+  width: 35%;
+  height: 10px;
+  position: relative;
+  left: -32.5%;
+  top: 25%;
+  z-index: -1;
+  border-radius: 18px;
+}
+
+.lm-y:hover::after {
+  background-color: hsl(51, 100%, 49%);
+}
+
+.lm-r:hover::after {
+  background-color: hsl(7, 99%, 70%);
+}
+
+.img-box {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.text-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-size: cover;
+  text-align: center;
+  padding: 0 11rem;
+  padding-bottom: 4rem;
+  margin-bottom: -5px;
+}
+
+.text-img-box h2 {
+  font-family: "Fraunces";
+  font-size: 1.9rem;
+  padding-bottom: 1.5rem;
+}
+
+.text-img-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.text-img-box.left-box {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  color: hsl(167, 40%, 24%);
+}
+
+.text-img-box.right-box {
+  background-image: url(./images/desktop/image-photography.jpg);
+  color: hsl(198, 62%, 26%);
+}
+
+.section--testimonials {
+  padding: 10rem;
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.testimonial--heading {
+  padding-bottom: 6rem;
+  grid-column: span 3;
+  font-family: "Fraunces";
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: hsl(210, 4%, 67%);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: hsl(232, 10%, 55%);
+}
+
+.testimonial--img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.testimonial--text {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.testimonial--name {
+  font-family: "Fraunces";
+  font-weight: 900;
+  padding-bottom: 0.8rem;
+  color: hsl(212, 27%, 19%);
+}
+
+.testimonial--role {
+  color: hsl(210, 4%, 67%);
+}
+
+.section--gallery {
+  margin-bottom: -5px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.footer {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(168, 41%, 49%, 0.75);
+  color: hsl(168, 34%, 41%);
+}
+
+.footer .logo {
+  filter: invert(0.5) sepia(1) saturate(45) hue-rotate(150deg);
+}
+
+.footer-links {
+  padding: 3rem 0 5rem 0;
+  display: flex;
+
+  gap: 3.5rem;
+}
+
+.footer-link:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.attribution {
+  font-size: 1.2rem;
+  padding-top: 80px;
+}
+
+.hidden {
+  display: none;
+}
