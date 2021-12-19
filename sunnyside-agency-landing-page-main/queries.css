@@ -42,7 +42,7 @@
     height: 0;
     position: relative;
     top: -45px;
-    left: 92%;
+    left: 92.5%;
     border-left: 25px solid transparent;
 
     border-bottom: 25px solid #fff;
@@ -119,6 +119,10 @@
   .learn-more {
     text-align: center;
     margin-bottom: 3rem;
+  }
+
+  .learn-more:hover::after {
+    content: none;
   }
 
   .img-box-transform {
