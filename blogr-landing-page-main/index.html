@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <script defer src="script.js"></script>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <img class="header--logo" src="images/logo.svg" />
+
+        <div class="container--selects">
+          <select name="products" class="selects product-selects">
+            <option value="product">Product</option>
+            <option value="overview">Overview</option>
+            <option value="pricing">Pricing</option>
+            <option value="marketplace">Marketplace</option>
+            <option value="features">Features</option>
+            <option value="integrations">Integrations</option>
+          </select>
+
+          <select name="company" class="selects company-selects">
+            <option value="company">Company</option>
+            <option value="overview">About</option>
+            <option value="pricing">Team</option>
+            <option value="marketplace">Blog</option>
+            <option value="features">Careers</option>
+          </select>
+
+          <select name="connect" class="selects connect-selects">
+            <option value="connect">Connect</option>
+            <option value="overview">Contact</option>
+            <option value="pricing">Newsletter</option>
+            <option value="marketplace">LinkedIn</option>
+          </select>
+        </div>
+
+        <div class="access--btns">
+          <a class="btn btn--login" href="#">Login</a>
+          <a class="btn btn--cta sign-up" href="#">Sign up</a>
+        </div>
+
+        <div class="mobile-nav">
+          <img class="mobile-nav-img" src="images/icon-hamburger.svg" />
+          <img
+            class="mobile-nav-img-close hidden"
+            src="images/icon-close.svg"
+          />
+        </div>
+      </div>
+      <div class="mobile-nav-modal hidden"></div>
+
+      <div class="header--container">
+        <h1 class="header--heading">A modern publishing platform</h1>
+        <p class="header--sub-heading">
+          Grow your audience and build your online brand
+        </p>
+
+        <div class="header--btns">
+          <button class="btn btn--cta">Start for Free</button>
+          <button class="btn btn--learn">Learn More</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section--description">
+      <h2 class="description--heading">Designed for the future</h2>
+      <div class="description--container">
+        <div class="description--text-box">
+          <h3 class="description--title">Introducing an extensible editor</h3>
+          <p class="description--text">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <h3 class="description--title">Robust content management</h3>
+
+          <p class="description--text">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+
+        <img
+          class="description--img"
+          src="images/illustration-editor-desktop.svg"
+        />
+        <img
+          class="description--img-mobile"
+          src="images/illustration-editor-mobile.svg"
+        />
+      </div>
+    </section>
+
+    <section class="section--infrastructure">
+      <div class="container--infrastructure">
+        <img class="infrastructure--img" src="images/illustration-phones.svg" />
+        <div class="infrastructure--text-box">
+          <h2 class="infrastructure--heading">
+            State of the Art Infrastructure
+          </h2>
+
+          <p class="infrastructure--text">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--features">
+      <div class="features--container">
+        <img
+          class="features--img"
+          src="images/illustration-laptop-desktop.svg"
+        />
+
+        <img
+          class="features--img-mobile"
+          src="images/illustration-laptop-mobile.svg"
+        />
+
+        <div class="features--text-box">
+          <h2 class="features--title">Free, open, simple</h2>
+
+          <p class="features--text">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+
+          <h2 class="features--title">Powerful tooling</h2>
+
+          <p class="features--text">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img class="footer--logo" src="images/logo.svg" />
+
+      <div class="footer--list">
+        <p class="footer--title">Product</p>
+
+        <ul class="footer--links">
+          <li class="footer--link">Overview</li>
+          <li class="footer--link">Pricing</li>
+          <li class="footer--link">Marketplace</li>
+          <li class="footer--link">Features</li>
+          <li class="footer--link">Integrations</li>
+        </ul>
+      </div>
+
+      <div class="footer--list">
+        <p class="footer--title">Company</p>
+
+        <ul class="footer--links">
+          <li class="footer--link">About</li>
+          <li class="footer--link">Team</li>
+          <li class="footer--link">Blog</li>
+          <li class="footer--link">Careers</li>
+        </ul>
+      </div>
+
+      <div class="footer--list">
+        <p class="footer--title">Connect</p>
+
+        <ul class="footer--links">
+          <li class="footer--link">Contact</li>
+          <li class="footer--link">Newsletter</li>
+          <li class="footer--link">LinkedIn</li>
+        </ul>
+      </div>
+    </footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://robertofranco.netlify.app/">Roberto Franco</a>.
+    </p>
+  </body>
+</html>
